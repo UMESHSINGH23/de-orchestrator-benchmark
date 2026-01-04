@@ -29,9 +29,9 @@ The goal is to showcase how real-world data science projects are structured and 
 ## Project Structure
 de-orchestrator-benchmark/
 <br>
-├── dags/                      # Airflow DAGs
+├── dags/                           # Airflow DAGs
 <br>
-├── src/                       # Core business logic
+├── src/                            # Core business logic
 <br>
 │   ├── data_ingestion/
 <br>
@@ -43,11 +43,11 @@ de-orchestrator-benchmark/
 <br>
 │   └── evaluation/
 <br>
-├── data/                      # Datasets
+├── data/                           # Datasets
 <br>
-├── figures/                   # Plots & charts
+├── figures/                        # Plots & charts
 <br>
-├── tables/                    # Result tables
+├── tables/                         # Result tables
 <br>
 ├── requirements.txt
 <br>

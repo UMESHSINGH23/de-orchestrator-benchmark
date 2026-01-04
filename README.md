@@ -35,7 +35,7 @@ cd project-Benchmarking Workflow Orchestrators (Airflow vs Luigi vs Prefect) for
 
 ## Project Structure
 de-orchestrator-benchmark/
-├── dags/.              # Airflow DAGs
+├── dags/               # Airflow DAGs
 ├── src/                # Core business logic
 
     ├── data_ingestion/      # Data loading logic
@@ -43,9 +43,9 @@ de-orchestrator-benchmark/
     ├── feature_engineering/ # Feature creation and transformations
     ├── model_training/      # Analytical / ML models
     └── model_evaluation/    # Figure and table generation
-├── data/.              # Datasets
+├── data/               # Datasets
 ├── figures/            # Plots & charts
-├── tables/.            # Result tables
+├── tables/             # Result tables
 ├── requirements.txt.   # Python dependencies
 └── README.md.          # Project documentation
 ---

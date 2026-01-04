@@ -1,7 +1,7 @@
 # Data Engineering Project – Technical Submission (Part 2)
 Course: Data Engineering  
 Instructor: Prof. Raja Hashim Ali  
-Submission: Part 2 – Technical Implementation 
+Project Name: Benchmarking Workflow Orchestrators (Airflow vs Luigi vs Prefect) for Tabular ETL
 **Group:** WS25-DE21 [Student A : UMESH SINGH] [STUDENT B : TALATCAN] 
 ## Project Overview
 This project implements an end-to-end data engineering pipeline designed to ingest, clean, transform, analyze, and evaluate a real-world dataset. The pipeline follows a modular and reproducible structure aligned with industry-style data workflows.

@@ -28,6 +28,7 @@ The goal is to showcase how real-world data science projects are structured and 
 
 ## Project Structure
 project-name/
+<br>
 ├── dags/                      # Airflow DAGs
 ├── src/                       # Core business logic
 │   ├── data_ingestion/

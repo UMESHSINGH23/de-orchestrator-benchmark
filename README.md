@@ -18,7 +18,7 @@ A reproducible Data Engineering project benchmarking Apache Airflow, Luigi, and 
 - Formatting, clarity, and consistency of results
 # End-to-End Data Pipeline with Apache Airflow
 
-## 📌 Project Overview
+## Project Overview
 This project demonstrates an end-to-end data pipeline built using Apache Airflow. 
 The pipeline covers data ingestion, cleaning, feature engineering, model training, and evaluation.
 
@@ -26,7 +26,7 @@ The goal is to showcase how real-world data science projects are structured and 
 
 ---
 
-## 🧱 Project Structure
+## Project Structure
 project-name/
 ├── dags/                      # Airflow DAGs
 ├── src/                       # Core business logic
@@ -51,7 +51,7 @@ project-name/
 
 ---
 
-## 🚀 Pipeline Flow
+## Pipeline Flow
 1. Data Ingestion
 2. Data Cleaning
 3. Feature Engineering
@@ -60,7 +60,7 @@ project-name/
 
 ---
 
-## 🎯 Use Case
+## Use Case
 This structure reflects how data pipelines are implemented in:
 - FinTech
 - HealthTech
@@ -69,7 +69,7 @@ This structure reflects how data pipelines are implemented in:
 
 ---
 
-## 📈 Future Improvements
+## Future Improvements
 - Add data validation
 - Add logging & monitoring
 - Add CI/CD
@@ -77,6 +77,6 @@ This structure reflects how data pipelines are implemented in:
 
 ---
 
-## 👨‍💻 Author
+## Author
 Umesh Singh  
 MSc Data Science | Germany

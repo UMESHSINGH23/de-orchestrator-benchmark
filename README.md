@@ -29,7 +29,9 @@ The goal is to showcase how real-world data science projects are structured and 
 ## Project Structure
 de-orchestrator-benchmark/
 <br>
-├── dags/<div> # Airflow DAGs
+├── dags/ 
+<style>
+.space-20 { margin-top: 20px; } # Airflow DAGs
 <br>
 ├── src/                            # Core business logic
 <br>

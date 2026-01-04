@@ -3,48 +3,91 @@ from airflow import DAG
 from airflow.operators.python import PythonOperator
 from datetime import datetime
 
-from src.data_ingestion.ingest_data import ingest_data
-from src.data_cleaning.clean_data import clean_data
-from src.feature_engineering.build_features import build_features
-from src.modeling.train_model import train_model
-from src.evaluation.generate_outputs import generate_outputs
+# ---------------------------
+# Task functions
+# ---------------------------
 
-default_args = {
-    "owner": "airflow",
-    "start_date": datetime(2024, 1, 1),
-    "retries": 1,
-}
+def extract_data():
+    """
+    Extract raw data from the source dataset.
+    """
+    print("Extracting data...")
+
+def clean_data():
+    """
+    Perform data cleaning and preprocessing.
+    """
+    print("Cleaning data...")
+
+def build_features():
+    """
+    Create features required for analysis and modeling.
+    """
+    print("Building features...")
+
+def train_model():
+    """
+    Train a simple analytical or machine learning model.
+    """
+    print("Training model...")
+
+def generate_figures():
+    """
+    Generate all required figures from the analysis.
+    """
+    print("Generating figures...")
+
+def save_tables():
+    """
+    Save all generated tables to disk.
+    """
+    print("Saving tables...")
+
+
+# ---------------------------
+# DAG Definition
+# ---------------------------
 
 with DAG(
     dag_id="project_pipeline_dag",
-    default_args=default_args,
-    schedule_interval="@daily",
-    catchup=False
+    start_date=datetime(2024, 1, 1),
+    schedule_interval=None,
+    catchup=False,
+    description="End-to-end data engineering pipeline DAG",
 ) as dag:
 
-    ingest = PythonOperator(
-        task_id="data_ingestion",
-        python_callable=ingest_data
+    extract_task = PythonOperator(
+        task_id="extract_data",
+        python_callable=extract_data,
     )
 
-    clean = PythonOperator(
-        task_id="data_cleaning",
-        python_callable=clean_data
+    clean_task = PythonOperator(
+        task_id="clean_data",
+        python_callable=clean_data,
     )
 
-    features = PythonOperator(
-        task_id="feature_engineering",
-        python_callable=build_features
+    feature_task = PythonOperator(
+        task_id="build_features",
+        python_callable=build_features,
     )
 
-    train = PythonOperator(
-        task_id="model_training",
-        python_callable=train_model
+    train_task = PythonOperator(
+        task_id="train_model",
+        python_callable=train_model,
     )
 
-    evaluate = PythonOperator(
-        task_id="model_evaluation",
-        python_callable=generate_outputs
+    figure_task = PythonOperator(
+        task_id="generate_figures",
+        python_callable=generate_figures,
     )
 
-    ingest >> clean >> features >> train >> evaluate
+    table_task = PythonOperator(
+        task_id="save_tables",
+        python_callable=save_tables,
+    )
+
+    # ---------------------------
+    # Task Dependencies
+    # ---------------------------
+
+    extract_task >> clean_task >> feature_task >> train_task >> figure_task >> table_task

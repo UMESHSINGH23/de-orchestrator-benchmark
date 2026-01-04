@@ -207,3 +207,18 @@ marimo/_lsp/
 __marimo__/
 .DS_Store
 data/
+
+# ===============================
+# Generated outputs (DO NOT COMMIT)
+# ===============================
+Figures_and_Tables.zip
+Figures_and_Tables/
+
+figures/*
+tables/*
+
+# ===============================
+# Keep folder structure only
+# ===============================
+!figures/.gitkeep
+!tables/.gitkeep

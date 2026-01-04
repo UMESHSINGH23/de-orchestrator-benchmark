@@ -37,21 +37,16 @@ de-orchestrator-benchmark/
 ├── dags/.              # Airflow DAGs
 ├── src/                # Core business logic
 
-        ├── data_ingestion/
-        ├── data_cleaning/
-        ├── feature_engineering/
-        ├── modeling/
-        └── evaluation/
-<br>
+    ├── data_ingestion/
+    ├── data_cleaning/
+    ├── feature_engineering/
+    ├── modeling/
+    └── evaluation/
 ├── data/.              # Datasets
-<br>
 ├── figures/            # Plots & charts
 ├── tables/.            # Result tables
-<br>
 ├── requirements.txt
-<br>
 └── README.md
-<br>
 ---
 
 ## ⚙️ Technologies Used

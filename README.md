@@ -44,8 +44,8 @@ de-orchestrator-benchmark/
     ├── model_training/      # Analytical / ML models
     └── model_evaluation/    # Figure and table generation
 ├── data/               # Datasets
-├── figures/            # Plots & charts
-├── tables/             # Result tables
+├── figures/            # Auto-generated figures (PDF)
+├── tables/             # Auto-generated tables (Excel/CSV)
 ├── requirements.txt.   # Python dependencies
 └── README.md.          # Project documentation
 ---
@@ -74,9 +74,6 @@ This structure reflects how data pipelines are implemented in:
 ---
 
 ## Future Improvements
-- Add data validation
-- Add logging & monitoring
-- Add CI/CD
 - Deploy using Docker
 
 ---

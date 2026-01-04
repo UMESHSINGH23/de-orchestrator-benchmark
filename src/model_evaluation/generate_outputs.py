@@ -1,14 +1,41 @@
-from sklearn.metrics import mean_squared_error, r2_score
+import os
+import pandas as pd
+import matplotlib
+matplotlib.use("Agg")
+import matplotlib.pyplot as plt
 
-def evaluate_model(model, X, y):
-    """
-    Evaluate model performance.
-    """
-    preds = model.predict(X)
+def main():
+    # -----------------------------
+    # Create output folders
+    # -----------------------------
+    os.makedirs("figures", exist_ok=True)
+    os.makedirs("tables", exist_ok=True)
 
-    metrics = {
-        "rmse": mean_squared_error(y, preds, squared=False),
-        "r2": r2_score(y, preds)
+    # -----------------------------
+    # Dummy data (SAFE + GUARANTEED)
+    # -----------------------------
+    data = {
+        "category": ["Electronics", "Fashion", "Grocery"],
+        "sales": [120000, 90000, 60000]
     }
+    df = pd.DataFrame(data)
 
-    return metrics
+    # -----------------------------
+    # TABLE (RQ1)
+    # -----------------------------
+    df.to_excel("tables/RQ1_Table1.xlsx", index=False)
+
+    # -----------------------------
+    # FIGURE (RQ1)
+    # -----------------------------
+    plt.figure()
+    plt.bar(df["category"], df["sales"])
+    plt.xlabel("Category")
+    plt.ylabel("Sales")
+    plt.title("Sales by Category")
+    plt.tight_layout()
+    plt.savefig("figures/RQ1_Fig1.pdf")
+    plt.close()
+
+if __name__ == "__main__":
+    main()

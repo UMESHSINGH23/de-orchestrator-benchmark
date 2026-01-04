@@ -27,20 +27,32 @@ The goal is to showcase how real-world data science projects are structured and 
 ---
 
 ## Project Structure
-project-name/
+de-orchestrator-benchmark/
 <br>
 ├── dags/                      # Airflow DAGs
+<br>
 ├── src/                       # Core business logic
+<br>
 │   ├── data_ingestion/
+<br>
 │   ├── data_cleaning/
+<br>
 │   ├── feature_engineering/
+<br>
 │   ├── modeling/
+<br>
 │   └── evaluation/
+<br>
 ├── data/                      # Datasets
+<br>
 ├── figures/                   # Plots & charts
+<br>
 ├── tables/                    # Result tables
+<br>
 ├── requirements.txt
+<br>
 └── README.md
+<br>
 ---
 
 ## ⚙️ Technologies Used

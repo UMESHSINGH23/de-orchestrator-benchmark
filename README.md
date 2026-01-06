@@ -21,10 +21,14 @@ The dataset used in this project is:
 Note: The raw dataset is not included in this repository due to size constraints. A small sample (if required) is placed under the `data/sample/sample_data.csv.
 ## Research Questions
 
-RQ1. How does the average order value differ across product categories in Pakistan’s e-commerce market?
+RQ1. How does the average order value differ across product categories in Pakistan’s e-commerce market
+
 RQ2. Are there seasonal patterns in Pakistan’s e-commerce sales over time?
+
 RQ3. What proportion of customers generates the majority of total revenue?
+
 RQ4. How is total revenue distributed across different product categories?
+
 RQ5. Are there product categories with high order volume but relatively low revenue contribution?
 
 ## How to Run the Code
